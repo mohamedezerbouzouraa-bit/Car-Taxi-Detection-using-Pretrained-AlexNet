@@ -5,6 +5,7 @@ def preprocess_image(image_path):
     img = Image.open(image_path).convert("RGB")
     transform = transforms.Compose([
         transforms.Resize(256),
+        
         transforms.CenterCrop(224),
         transforms.ToTensor(),
         transforms.Normalize(
