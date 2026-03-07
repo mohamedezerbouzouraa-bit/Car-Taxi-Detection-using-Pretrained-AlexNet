@@ -8,4 +8,5 @@ model = load_model()
 
 input_tensor = preprocess_image(image_path)
 predicted_class, is_car, is_taxi = predict(input_tensor, model)
+
 print_result(predicted_class, is_car, is_taxi)
